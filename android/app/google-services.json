@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "465487253528",
+    "project_id": "douvan-douvan-a88f4",
+    "storage_bucket": "douvan-douvan-a88f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465487253528:android:b34ec2ffc1b94d9d79f36d",
+        "android_client_info": {
+          "package_name": "com.example.douvan_douvan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465487253528-cacqcq5akukrebpmhuc4ntka7g8tvv1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpaFj38y8DvKp_VPy_g__1CnlIS2ROp8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465487253528-cacqcq5akukrebpmhuc4ntka7g8tvv1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
