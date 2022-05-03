@@ -1,9 +1,12 @@
 // ignore: file_names
-import 'package:douvan_douvan/Vid%C3%A9o_player.dart';
-import 'package:douvan_douvan/delay_animation.dart';
-import 'package:douvan_douvan/inscription_page_particulier.dart';
+import 'package:douvan_douvan/Page_Connexion/Connection_page.dart';
+import 'package:douvan_douvan/Page_inscription/inscription_page_entreprise_1.dart';
+import 'package:douvan_douvan/Pluging/Vid%C3%A9o_player.dart';
+import 'package:douvan_douvan/Annimation/delay_animation.dart';
+import 'package:douvan_douvan/Page_inscription/inscription_page_particulie_1r.dart';
 import 'package:flutter/material.dart';
-import 'delay_animation.dart';
+import '../Annimation/delay_animation.dart';
+import 'package:douvan_douvan/Page_Home/home_page_connecté.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -66,6 +69,28 @@ class _MyHomePageState extends State<MyHomePage> {
                     shape: const StadiumBorder(),
                     padding: const EdgeInsets.all(13),
                   ),
+                  child: const Text('Connexion'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Home_page_connecte(),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+            DelayedAnimation(
+              delay: 4500,
+              child: Container(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.blue,
+                    shape: const StadiumBorder(),
+                    padding: const EdgeInsets.all(13),
+                  ),
                   child: const Text('Inscription / Particulier'),
                   onPressed: () {
                     Navigator.push(
@@ -93,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Inscription_page_Particulier(),
+                        builder: (context) => Inscription_page_Entreprise(),
                       ),
                     );
                   },
