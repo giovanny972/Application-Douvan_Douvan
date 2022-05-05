@@ -2,17 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'inscription_page_entreprise_3.dart';
 
-class Inscription_page_particulier_2 extends StatefulWidget {
-  const Inscription_page_particulier_2({Key? key}) : super(key: key);
+class Inscription_page_entreprise_2 extends StatefulWidget {
+  const Inscription_page_entreprise_2({Key? key}) : super(key: key);
 
   @override
-  State<Inscription_page_particulier_2> createState() =>
-      _Inscription_page_particulier_2State();
+  State<Inscription_page_entreprise_2> createState() =>
+      _Inscription_page_entreprise_2State();
 }
 
-class _Inscription_page_particulier_2State
-    extends State<Inscription_page_particulier_2> {
+class _Inscription_page_entreprise_2State
+    extends State<Inscription_page_entreprise_2> {
   var Proverbe = [
     "Ce qu'on méprise est souvent très utile",
     "Quand tous les péchés sont vieux, avarice est encore jeune",
@@ -20,6 +21,7 @@ class _Inscription_page_particulier_2State
     "Qui prend s'oblige",
     "Pluie et tonnerre d'août, promettent huile et vin partout"
   ];
+
   bool val1 = false;
   bool val2 = false;
   bool val3 = false;
@@ -115,8 +117,7 @@ class _Inscription_page_particulier_2State
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) =>
-                        const Inscription_page_particulier_2(),
+                    builder: (context) => const inscription_page_Entreprise_3(),
                   ),
                 );
               },

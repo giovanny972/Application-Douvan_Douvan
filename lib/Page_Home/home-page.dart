@@ -5,6 +5,7 @@ import 'package:douvan_douvan/Pluging/Vid%C3%A9o_player.dart';
 import 'package:douvan_douvan/Annimation/delay_animation.dart';
 import 'package:douvan_douvan/Page_inscription/inscription_page_particulie_1r.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../Annimation/delay_animation.dart';
 import 'package:douvan_douvan/Page_Home/home_page_connecté.dart';
 
@@ -21,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFEDECF2),
+      backgroundColor: Color.fromARGB(255, 241, 215, 215),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -31,10 +32,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.symmetric(
                   vertical: 30,
                 ),
-                height: 100,
-                width: 100,
+                height: 120,
+                width: 120,
                 child: Center(
-                  child: Image.asset("images/logo-exemple 2.png"),
+                  child: Image.asset("images/Karisko-logo.png"),
                 ),
               ),
             ),
@@ -51,11 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 150,
                 child: Container(
                   margin: const EdgeInsets.symmetric(
-                    vertical: 60,
+                    vertical: 40,
                     horizontal: 30,
                   ),
-                  child: const Text(
-                      "Koudmen: Economie Sociale et Solidaire adaptée respectueuse du destin commun partagé mise en oeuvre entre personnes."),
+                  child: Text(
+                    "Koudmen: Economie Sociale et Solidaire adaptée respectueuse du destin commun partagé mise en oeuvre entre personnes.",
+                    style: GoogleFonts.ramaraja(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -65,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blue,
+                    primary: Colors.red,
                     shape: const StadiumBorder(),
                     padding: const EdgeInsets.all(13),
                   ),
@@ -74,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Home_page_connecte(),
+                        builder: (context) => Connection_page(),
                       ),
                     );
                   },
@@ -87,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blue,
+                    primary: Colors.red,
                     shape: const StadiumBorder(),
                     padding: const EdgeInsets.all(13),
                   ),
@@ -109,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.blue,
+                    primary: Colors.red,
                     shape: const StadiumBorder(),
                     padding: const EdgeInsets.all(13),
                   ),

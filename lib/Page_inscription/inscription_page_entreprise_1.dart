@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'Inscription_page_entreprise_2.dart';
 
 class Inscription_page_Entreprise extends StatelessWidget {
   const Inscription_page_Entreprise({Key? key}) : super(key: key);
@@ -8,9 +9,11 @@ class Inscription_page_Entreprise extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 241, 215, 215),
       appBar: AppBar(
+        backgroundColor: Colors.red,
         centerTitle: true,
-        title: Text("Inscription Entreprises 1/3"),
+        title: const Text("Inscription Entreprises 1/3"),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -19,7 +22,7 @@ class Inscription_page_Entreprise extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Image.asset('images/logo-exemple 2.png',
+                Image.asset('images/Karisko-logo.png',
                     height: 100.0, width: 100.0),
                 Center(
                   child: Text('Inscription Entreprise',
@@ -64,8 +67,16 @@ class Inscription_page_Entreprise extends StatelessWidget {
                 ),
                 const SizedBox(height: 30.0),
                 FlatButton(
-                  onPressed: () {},
-                  color: Colors.blue,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const Inscription_page_entreprise_2(),
+                      ),
+                    );
+                  },
+                  color: Colors.red,
                   child: const Text(
                     'Passer à la prochaine',
                     style: TextStyle(color: Colors.white),

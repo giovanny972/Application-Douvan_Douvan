@@ -11,9 +11,11 @@ class _Connection_pageState extends State<Connection_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 241, 215, 215),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Connexion"),
+        title: const Text("Connexion"),
+        backgroundColor: Colors.red,
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -22,7 +24,7 @@ class _Connection_pageState extends State<Connection_page> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Image.asset('images/logo-exemple 2.png',
+                Image.asset('images/Karisko-logo.png',
                     height: 100.0, width: 100.0),
                 Center(
                   child: Text('Connexion',
@@ -46,8 +48,9 @@ class _Connection_pageState extends State<Connection_page> {
                 const SizedBox(height: 30.0),
                 FlatButton(
                   onPressed: () {},
-                  color: Colors.blue,
-                  child: const Text('Connexion'),
+                  color: Colors.red,
+                  child: const Text('Connexion',
+                      style: TextStyle(color: Colors.white)),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
                   ),
